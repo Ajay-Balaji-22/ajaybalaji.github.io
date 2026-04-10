@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajay Balaji | Strategy & Growth</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#0A1F44",
+        accent: "#1E3A8A"
+      }
+    }
+  }
+}
+</script>
+
+<style>
+html { scroll-behavior: smooth; }
+.modal { display:none; }
+.modal.active { display:flex; }
+</style>
+</head>
+
+<body class="bg-white text-gray-900 font-sans">
+
+<!-- NAV -->
+<nav class="fixed w-full bg-white shadow-sm z-50">
+<div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+<h1 class="font-bold text-primary text-xl">Ajay Balaji</h1>
+<div class="space-x-6 hidden md:block">
+<a href="#about">About</a>
+<a href="#work">Work</a>
+<a href="#why">Why Me</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center bg-primary text-white px-6">
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+<div data-aos="fade-right">
+
+<p class="text-sm uppercase tracking-widest text-gray-300 mb-3">
+Currently @ Strategy& (PwC)
+</p>
+
+<h1 class="text-5xl md:text-6xl font-bold mb-4">
+Ajay Balaji
+</h1>
+
+<h2 class="text-xl md:text-2xl text-gray-300 mb-6">
+Strategy • Growth • Execution
+</h2>
+
+<p class="text-lg mb-6 text-gray-300 max-w-xl">
+Working with CXOs on corporate strategy, market entry, and operating model transformation. Looking to transition into high-ownership roles across founder’s office, corporate strategy, and growth.
+</p>
+
+<div class="text-gray-400 text-sm mb-8">
+₹800 Cr+ Impact • 40% Growth Programs • CXO Stakeholder Experience
+</div>
+
+<div class="space-x-4">
+<a href="resume.pdf" download class="bg-white text-primary px-6 py-3 rounded-full font-semibold">
+View Resume
+</a>
+<a href="#contact" class="border border-white px-6 py-3 rounded-full">
+Contact Me
+</a>
+</div>
+
+</div>
+
+<div data-aos="fade-left" class="flex justify-center">
+<img src="profile.jpg" class="rounded-2xl shadow-2xl w-80 md:w-96 border border-gray-700">
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 px-6 max-w-5xl mx-auto">
+<h2 class="text-3xl font-bold text-primary mb-8">My Story</h2>
+
+<p class="mb-6 text-lg">
+I started as a mechanical engineer working on factory-floor problems — improving production lines and solving operational inefficiencies. This built a strong foundation in how businesses actually operate.
+</p>
+
+<p class="mb-6 text-lg">
+At IIM Bangalore and now at Strategy&, I’ve worked with CXOs across industries on corporate strategy, growth, and transformation. My work has contributed to unlocking ₹800 Cr+ in revenue opportunities and building scalable operating models.
+</p>
+
+<p class="text-lg">
+I am now looking to move closer to execution — into roles where I can work directly with founders or leadership teams and drive measurable business outcomes end-to-end.
+</p>
+</section>
+
+<!-- WORK -->
+<section id="work" class="bg-gray-100 py-20 px-6">
+<div class="max-w-6xl mx-auto">
+<h2 class="text-3xl font-bold text-primary mb-12">Selected Work</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div onclick="openModal('case1')" class="bg-white p-6 rounded-xl shadow hover:shadow-xl cursor-pointer">
+<div class="text-3xl mb-3">🌾</div>
+<h3 class="font-bold">₹800 Cr Growth Strategy</h3>
+<p class="text-sm text-gray-500">Agrochemicals</p>
+</div>
+
+<div onclick="openModal('case2')" class="bg-white p-6 rounded-xl shadow hover:shadow-xl cursor-pointer">
+<div class="text-3xl mb-3">🔌</div>
+<h3 class="font-bold">₹1,700 Cr Market Entry</h3>
+<p class="text-sm text-gray-500">Electronics</p>
+</div>
+
+<div onclick="openModal('case3')" class="bg-white p-6 rounded-xl shadow hover:shadow-xl cursor-pointer">
+<div class="text-3xl mb-3">🏭</div>
+<h3 class="font-bold">B2B Transformation</h3>
+<p class="text-sm text-gray-500">Industrial / FMEG</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="py-20 px-6 max-w-6xl mx-auto">
+<h2 class="text-3xl font-bold text-primary mb-10">Where I Add Value</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div>
+<h3 class="font-bold text-xl mb-2">Startups / Founder’s Office</h3>
+<p class="text-gray-600">
+Bring structure to ambiguity, solve problems quickly, and execute with high ownership alongside founders.
+</p>
+</div>
+
+<div>
+<h3 class="font-bold text-xl mb-2">Consulting</h3>
+<p class="text-gray-600">
+Strong in structured thinking, stakeholder management, and delivering high-impact work in fast-paced environments.
+</p>
+</div>
+
+<div>
+<h3 class="font-bold text-xl mb-2">MNC Strategy Roles</h3>
+<p class="text-gray-600">
+Experience building scalable systems, governance frameworks, and translating strategy into execution.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-primary text-white py-20 text-center">
+<h2 class="text-3xl font-bold mb-6">Let’s Connect</h2>
+
+<a href="mailto:ajaybalajiv22@gmail.com" class="bg-white text-primary px-6 py-3 rounded-full font-semibold">
+Email Me
+</a>
+
+<div class="mt-4">
+<a href="https://linkedin.com/in/ajaybalajiv" target="_blank" class="underline">
+LinkedIn Profile
+</a>
+</div>
+</section>
+
+<!-- MODALS -->
+<div id="case1" class="modal fixed inset-0 bg-black bg-opacity-70 items-center justify-center">
+<div class="bg-white max-w-2xl p-8 rounded-xl">
+<h2 class="font-bold mb-4">₹800 Cr Growth Strategy</h2>
+<p><strong>Problem:</strong> Stagnant growth</p>
+<p><strong>Approach:</strong> Market sizing, benchmarking</p>
+<p><strong>Outcome:</strong> ₹800 Cr+ opportunity</p>
+<button onclick="closeModal('case1')" class="mt-4 text-primary">Close</button>
+</div>
+</div>
+
+<div id="case2" class="modal fixed inset-0 bg-black bg-opacity-70 items-center justify-center">
+<div class="bg-white max-w-2xl p-8 rounded-xl">
+<h2 class="font-bold mb-4">Market Entry</h2>
+<p><strong>Approach:</strong> City prioritization, GTM</p>
+<p><strong>Outcome:</strong> ₹1,700 Cr+ opportunity</p>
+<button onclick="closeModal('case2')" class="mt-4 text-primary">Close</button>
+</div>
+</div>
+
+<div id="case3" class="modal fixed inset-0 bg-black bg-opacity-70 items-center justify-center">
+<div class="bg-white max-w-2xl p-8 rounded-xl">
+<h2 class="font-bold mb-4">B2B Transformation</h2>
+<p><strong>Approach:</strong> Sales redesign</p>
+<p><strong>Outcome:</strong> 40%+ growth roadmap</p>
+<button onclick="closeModal('case3')" class="mt-4 text-primary">Close</button>
+</div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 1000, once: true });
+
+function openModal(id){
+document.getElementById(id).classList.add("active");
+}
+function closeModal(id){
+document.getElementById(id).classList.remove("active");
+}
+</script>
+
+</body>
+</html>
